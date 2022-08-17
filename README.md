@@ -11,6 +11,14 @@
 
 ## npm run pub 做了什么
 
+![](imgs/Code_FbXKWPPRLS.gif)
+
+1、选择要发布到包。
+2、选择包的版本。
+3、提示是否确认发布？
+4、
+
+
 ## 使用 github action 的 CI/CD
 
 npm pub 完成后，会打 tag 并将代码提交到 github，后续将包发布到 npm 的工作可以使用 github action 来实现。
