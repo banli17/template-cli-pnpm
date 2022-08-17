@@ -48,19 +48,19 @@ importers:
 
   packages/cli-a:
     specifiers:
-      '@banli17/template-cli-pnpm-b': workspace:*
-      '@banli17/template-cli-pnpm-log': workspace:*
-      '@banli17/template-cli-pnpm-utils': workspace:*
+      '@bl-pnpm/cli-b': workspace:*
+      '@bl-pnpm/cli-log': workspace:*
+      '@bl-pnpm/cli-utils': workspace:*
     dependencies:
-      '@banli17/template-cli-pnpm-b': link:../cli-b
-      '@banli17/template-cli-pnpm-log': link:../cli-log
-      '@banli17/template-cli-pnpm-utils': link:../cli-utils
+      '@bl-pnpm/cli-b': link:../cli-b
+      '@bl-pnpm/cli-log': link:../cli-log
+      '@bl-pnpm/cli-utils': link:../cli-utils
 
   packages/cli-b:
     specifiers:
-      '@banli17/template-cli-pnpm-utils': workspace:*
+      '@bl-pnpm/cli-utils': workspace:*
     dependencies:
-      '@banli17/template-cli-pnpm-utils': link:../cli-utils
+      '@bl-pnpm/cli-utils': link:../cli-utils
 
   packages/cli-log:
     specifiers:

@@ -31,9 +31,7 @@ async function main() {
   const activeVersion = await getActiveVersion(pkgName)
 
   step('Publishing package...')
-  const releaseTag = version.includes('beta')
-    ? 'beta'
-    : version.includes('alpha')
+  const releaseTag = version.includes('alpha')
     ? 'alpha'
     : semver.lt(currentVersion, activeVersion)
     ? 'previous'
