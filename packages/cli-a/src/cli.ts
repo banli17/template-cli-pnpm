@@ -1,5 +1,5 @@
-import utils from '@banli17/template-cli-pnpm-utils'
-import log from '@banli17/template-cli-pnpm-log'
+import utils from '@bl-pnpm/cli-utils'
+import log from '@bl-pnpm/cli-log'
 
 
 log.verbose('1 + 2 = ', utils.math.add(1, 2) + '')
