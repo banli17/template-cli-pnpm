@@ -1,0 +1,41 @@
+{
+  "name": "@banli17/template-cli-pnpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm -r --parallel --filter=./packages/* run dev",
+    "build": "pnpm -r --filter=./packages/* run build",
+    "pub": "tsx scripts/release.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.7.6",
+    "@types/npmlog": "^4.1.4",
+    "@types/prompts": "^2.0.14",
+    "@types/semver": "^7.3.12",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "execa": "^6.1.0",
+    "fs-extra": "^10.1.0",
+    "minimist": "^1.2.6",
+    "picocolors": "^1.0.0",
+    "prettier": "^2.3.2",
+    "prompts": "^2.4.2",
+    "semver": "^7.3.7",
+    "tsx": "^3.8.2",
+    "typescript": "^4.7.4",
+    "unbuild": "^0.8.8"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "private": true
+}

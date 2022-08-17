@@ -1,0 +1,35 @@
+{
+  "name": "@banli17/template-cli-pnpm-a",
+  "version": "1.0.3",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "bl-cli-a": "./bin/index.js"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@banli17/template-cli-pnpm-utils": "workspace:*",
+    "@banli17/template-cli-pnpm-b": "workspace:*",
+    "@banli17/template-cli-pnpm-log": "workspace:*"
+  }
+}
