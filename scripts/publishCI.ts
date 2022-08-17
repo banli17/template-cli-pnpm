@@ -21,13 +21,13 @@ async function main() {
 
   if (version.startsWith('v')) version = version.slice(1)
 
-  const { currentVersion, pkgDir } = getPackageInfo(pkgName)
+  const { currentVersion, pkgDir, pkg } = getPackageInfo(pkgName)
   if (currentVersion !== version)
     throw new Error(
       `Package version from tag "${version}" mismatches with current version "${currentVersion}"`
     )
 
-  const activeVersion = await getActiveVersion(pkgName)
+  const activeVersion = await getActiveVersion(pkg.name)
 
   step('Publishing package...')
   const releaseTag = version.includes('alpha')

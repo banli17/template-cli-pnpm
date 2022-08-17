@@ -57,7 +57,7 @@ async function main(): Promise<void> {
   }
 
   const tag =
-    pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
+    pkgName === 'cli-a' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
 
   if (targetVersion.includes('alpha') && !args.tag) {
     args.tag = 'alpha'
@@ -88,6 +88,7 @@ async function main(): Promise<void> {
     '--commit-path',
     '.'
   ]
+
   if (pkgName !== 'cli-a') changelogArgs.push('--lerna-package', pkgName)
   console.log(`pkgDir`, pkgDir)
   await run('npx', changelogArgs, { cwd: pkgDir })
