@@ -1,6 +1,6 @@
 {
   "name": "@bl-pnpm/cli-a",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "files": [
     "dist"
