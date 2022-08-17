@@ -1,6 +1,6 @@
 {
   "name": "@banli17/template-cli-pnpm-log",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "files": [
     "dist"
