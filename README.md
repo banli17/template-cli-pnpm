@@ -16,7 +16,10 @@
 1、选择要发布到包。
 2、选择包的版本。
 3、提示是否确认发布？
-4、
+4、更新依赖的包版本。
+5、生成 changelog 日志
+6、Committing changes
+7、Pushing to GitHub
 
 
 ## 使用 github action 的 CI/CD
