@@ -1,6 +1,6 @@
 {
-  "name": "@vlic/cli-a",
-  "version": "1.0.10",
+  "name": "@bl-pnpm/cli-a",
+  "version": "1.0.11",
   "description": "",
   "files": [
     "dist"

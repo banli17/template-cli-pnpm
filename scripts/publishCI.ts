@@ -13,8 +13,7 @@ async function main() {
   if (!tag) {
     throw new Error('No tag specified')
   }
-
-  let pkgName = '@vlic/cli-a'
+  let pkgName = '@bl-pnpm/cli-a'
   let version
 
   if (tag.includes('@')) [pkgName, version] = tag.split('@')
