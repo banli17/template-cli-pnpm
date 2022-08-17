@@ -59,9 +59,6 @@ async function main(): Promise<void> {
   const tag =
     pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
 
-  if (targetVersion.includes('beta') && !args.tag) {
-    args.tag = 'beta'
-  }
   if (targetVersion.includes('alpha') && !args.tag) {
     args.tag = 'alpha'
   }

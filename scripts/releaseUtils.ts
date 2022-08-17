@@ -26,10 +26,6 @@ export const versionIncrements: ReleaseType[] = [
   'patch',
   'minor',
   'major'
-  // 'prepatch',
-  // 'preminor',
-  // 'premajor',
-  // 'prerelease'
 ]
 
 interface Pkg {
@@ -115,14 +111,6 @@ export function getVersionChoices(currentVersion: string): VersionChoice[] {
   if (isStable) {
     versionChoices.push(
       {
-        title: 'beta-minor',
-        value: inc('preminor')
-      },
-      {
-        title: 'beta-major',
-        value: inc('premajor')
-      },
-      {
         title: 'alpha-minor',
         value: inc('preminor', 'alpha')
       },
@@ -139,17 +127,8 @@ export function getVersionChoices(currentVersion: string): VersionChoice[] {
         value: inc('major')
       }
     )
-  } else if (currentAlpha) {
-    versionChoices.push({
-      title: 'beta',
-      value: inc('patch') + '-beta.0'
-    })
-  } else {
-    versionChoices.push({
-      title: 'stable',
-      value: inc('patch')
-    })
   }
+
   versionChoices.push({ value: 'custom', title: 'custom' })
 
   versionChoices = versionChoices.map((i) => {
