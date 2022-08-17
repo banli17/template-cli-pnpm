@@ -1,5 +1,5 @@
 {
-  "name": "@banli17/template-cli-pnpm-b",
+  "name": "@bl-pnpm/cli-b",
   "version": "1.0.1",
   "description": "",
   "files": [
@@ -24,6 +24,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@banli17/template-cli-pnpm-utils": "workspace:*"
+    "@bl-pnpm/cli-utils": "workspace:*"
   }
 }

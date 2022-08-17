@@ -1,6 +1,6 @@
 {
-  "name": "@banli17/template-cli-pnpm-a",
-  "version": "1.0.7",
+  "name": "@vlic/cli-a",
+  "version": "1.0.8",
   "description": "",
   "files": [
     "dist"
@@ -28,8 +28,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@banli17/template-cli-pnpm-utils": "workspace:*",
-    "@banli17/template-cli-pnpm-b": "workspace:*",
-    "@banli17/template-cli-pnpm-log": "workspace:*"
+    "@bl-pnpm/cli-utils": "workspace:*",
+    "@bl-pnpm/cli-b": "workspace:*",
+    "@bl-pnpm/cli-log": "workspace:*"
   }
 }

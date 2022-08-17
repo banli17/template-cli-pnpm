@@ -1,5 +1,5 @@
 {
-  "name": "@banli17/template-cli-pnpm",
+  "name": "@bl-pnpm/template-cli-pnpm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm -r --parallel --filter=./packages/* run dev",
     "build": "pnpm -r --filter=./packages/* run build",
-    "pub": "tsx scripts/release.ts"
+    "pub": "tsx scripts/release.ts",
+    "ci-publish": "tsx scripts/publishCI.ts"
   },
   "keywords": [],
   "author": "",
