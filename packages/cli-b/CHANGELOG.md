@@ -1,3 +1,7 @@
+## [1.0.5](https://github.com/banli17/template-cli-pnpm/compare/cli-b@1.0.4...cli-b@1.0.5) (2022-08-18)
+
+
+
 ## [1.0.4](https://github.com/banli17/template-cli-pnpm/compare/cli-b@1.0.3...cli-b@1.0.4) (2022-08-18)
 
 
